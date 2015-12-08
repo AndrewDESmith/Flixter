@@ -27,5 +27,5 @@ Flixter::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.action_mailer.default_url_options = { :host => 'https://udemy-clone-andrew-smith.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'udemy-clone-andrew-smith.herokuapp.com' }
 end
