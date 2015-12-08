@@ -44,5 +44,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Add Twitter Bootstrap:
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sprockets'
+
+# Authentication using Devise:
+gem 'devise'
