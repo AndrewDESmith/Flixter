@@ -50,3 +50,6 @@ gem 'sprockets'
 
 # Authentication using Devise:
 gem 'devise'
+
+# Making dummy test data with FactoryGirl:
+gem 'factory_girl_rails', '~> 4.0'
