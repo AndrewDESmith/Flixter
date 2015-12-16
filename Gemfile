@@ -53,3 +53,6 @@ gem 'devise'
 
 # Making dummy test data with FactoryGirl:
 gem 'factory_girl_rails', '~> 4.0'
+
+# Forms using Simple Form gem:
+gem 'simple_form'
