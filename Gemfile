@@ -58,4 +58,4 @@ gem 'factory_girl_rails', '~> 4.0'
 gem 'simple_form'
 
 # Testing helper methods provided by Capybara:
-gem 'capybara'
+# gem 'capybara'

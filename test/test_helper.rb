@@ -2,7 +2,7 @@ ENV["RAILS_ENV"] ||= "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 # Add support for Capybara gem
-require 'capybara/rails'
+# require 'capybara/rails'
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
@@ -19,5 +19,5 @@ end
 class ActionController::TestCase
   include Devise::TestHelpers
   # Make the Capybara DSL available in all integration tests
-  include Capybara::DSL
+  # include Capybara::DSL
 end
