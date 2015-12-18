@@ -4,6 +4,10 @@ Flixter::Application.routes.draw do
   root 'static_pages#index'
   resources :courses, :only => [:index, :show]
   namespace :instructor do
+    # Set up a sections route without any actions solely to nest lessons underneath it, to avoid lessons being underneath a course id in the URL.  This is so that a user cannot manually go to the new lesson form for the wrong course.
+    resources :sections, :only => [] do
+      resources :lessons, :only => [:new, :create]
+    end
     resources :courses, :only => [:new, :create, :show] do
       resources :sections, :only => [:new, :create]
     end

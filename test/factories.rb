@@ -1,7 +1,11 @@
 FactoryGirl.define do
-  factory :user do
-    email 'omg@email.com'
-    password 'lolcatwat'
+  factory :lesson do
+    title 'Blah'
+    subtitle 'More Blah'
+  end
+
+  factory :section do
+    title 'Blah'
   end
 
   factory :course do
@@ -10,7 +14,8 @@ FactoryGirl.define do
     cost '0.00'
   end
 
-  factory :section do
-    title 'Blah'
+  factory :user do
+    email 'omg@email.com'
+    password 'lolcatwat'
   end
 end
