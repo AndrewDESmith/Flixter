@@ -35,4 +35,13 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
     }
     assert_response :unprocessable_entity
   end
+
+  test "only the creator of a course can view the instructor show page" do
+    user = FactoryGirl.create(:user)
+    course = FactoryGirl.create(:course, :user => user)
+    user2 = FactoryGirl.create(:user)
+    sign_in user2
+    get :show, :id => course.id
+    assert_response :unauthorized
+  end
 end

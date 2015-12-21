@@ -7,12 +7,8 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def create
-    @section = @course.sections.create(section_params)
-    if @section.valid?
-      redirect_to instructor_course_path(current_course)
-    else
-      render :new, :status => :unprocessable_entity
-    end
+    @section = current_course.sections.create(section_params)
+    redirect_to instructor_course_path(current_course)
   end
 
   private
