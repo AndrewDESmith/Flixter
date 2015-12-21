@@ -59,3 +59,12 @@ gem 'simple_form'
 
 # Testing helper methods provided by Capybara:
 # gem 'capybara'
+
+# Image uploading with Carrierwave:
+gem 'carrierwave'
+
+# Secure API key usage with Figaro:
+gem 'figaro'
+
+# Communication of carrierwave with Amazon S3:
+gem 'fog', '~> 1.3.1'
