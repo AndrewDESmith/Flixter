@@ -67,7 +67,10 @@ gem 'carrierwave'
 gem 'figaro'
 
 # Communication of Carrierwave with Amazon S3:
-gem 'fog', '~> 1.3.1'
+# gem 'fog', '~> 1.3.1'
+
+# Communication of Carrierwave with Amazon S3:
+gem 'carrierwave-aws'
 
 # Image resizing with MiniMagick (ImageMagick descendant):
 gem 'mini_magick', '~> 4.3.1'
