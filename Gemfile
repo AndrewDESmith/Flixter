@@ -74,3 +74,6 @@ gem 'carrierwave-aws'
 
 # Image resizing with MiniMagick (ImageMagick descendant):
 gem 'mini_magick', '~> 4.3.1'
+
+# Credit card payments using the Stripe API:
+gem 'stripe'
