@@ -77,3 +77,6 @@ gem 'mini_magick', '~> 4.3.1'
 
 # Credit card payments using the Stripe API:
 gem 'stripe'
+
+# Pre-build solution to database row sorting of sections and lessons:
+gem 'ranked-model'
