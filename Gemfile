@@ -48,8 +48,8 @@ end
 # gem 'debugger', group: [:development, :test]
 
 # Add Twitter Bootstrap:
-gem 'bootstrap-sass', '~> 3.3.5'
-gem 'sprockets'
+gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'sprockets', '<= 2.11.0'
 
 # Authentication using Devise:
 gem 'devise'
