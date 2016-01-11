@@ -16,7 +16,9 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def show
+    # Since our forms to create a new section and a new lesson were moved to the instructor/course show page, we must instantiate all new sections and new lessons here, so we have access to these new instances on the instructor/course show page:
     @section = Section.new
+    @lesson = Lesson.new
   end
 
   private

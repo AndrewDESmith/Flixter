@@ -1,12 +1,8 @@
 class Instructor::LessonsController < ApplicationController
   before_action :authenticate_user!
   # The route for the update action doesn't have the section id in its url, so only new and create need authorization for the current section:
-  before_action :require_authorized_for_current_section, :only => [:new, :create]
+  before_action :require_authorized_for_current_section, :only => [:create]
   before_action :require_authorized_for_current_lesson, :only => [:update]
-
-  def new
-    @lesson = Lesson.new
-  end
 
   def create
     @lesson = current_section.lessons.create(lesson_params)
