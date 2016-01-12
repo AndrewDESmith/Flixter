@@ -46,6 +46,18 @@
   text-decoration: none;
 }
 
+ /* Flexbox Sticky Footer CSS */
+  .Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .Site-content {
+    flex: 1;
+  }
+
+
 $footer-height-mobile: 350px;
 @media (max-width: 750px) {
   #footer {
@@ -64,15 +76,15 @@ $footer-height-mobile: 350px;
 
 
   /* Flexbox Sticky Footer CSS */
-  .Site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  // .Site {
+  //   display: flex;
+  //   min-height: 100vh;
+  //   flex-direction: column;
+  // }
 
-  .Site-content {
-    flex: 1;
-  }
+  // .Site-content {
+  //   flex: 1;
+  // }
 
   .footer-section {
     margin-bottom: 15px;
