@@ -8,9 +8,9 @@
   <link href="//vjs.zencdn.net/5.0.2/video-js.css" rel="stylesheet">
   <script src="//vjs.zencdn.net/5.0.2/video.js"></script>
 </head>
-<body>
+<body class="Site">
 
-  <div id="wrap">
+  <div class="Site-content">
     <!-- Bootstrap navbar -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -60,11 +60,71 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br>
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-3 footer-section">
+        <b>Teachers</b>
+        <br>
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br>
+        <%= link_to "My Dashboard", dashboard_path %>
+      </div>
+
+      <div class="col-xs-12 col-sm-3 footer-section">
+        <b>About</b>
+        <br>
+        <%= link_to "Team", "#" %>
+        <br>
+        <%= link_to "Careers", "#" %>
+        <br>
+        <%= link_to "Privacy Policy", "#" %>
+      </div>
+      <div class="col-xs-12 col-sm-3 footer-section">
+        <b>Contact</b>
+        <br>
+        andrew.d.e.smith@gmail.com
+      </div>
+      <div class="col-xs-12 col-sm-3 social footer-section">
+        <b>Social</b>
+        <br>
+        <%= link_to "https://github.com/AndrewDESmith" do %>
+          <%= image_tag "github-128-blue.png", :class => "social-button-large" %>
+        <% end %>
+        <%= link_to "https://andrewdesmith.wordpress.com/" do %>
+          <%= image_tag "wordpress-128.png", :class => "social-button" %>
+        <% end %>
+        <%= link_to "https://twitter.com/andrewdesmith" do  %>
+          <%= image_tag "twitter-128.png", :class => "social-button" %>
+        <% end %>
+      </div>
     </div>
   </div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
