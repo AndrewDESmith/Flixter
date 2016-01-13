@@ -7,7 +7,7 @@
     <br>
     <h2>Upgrade your skills today!</h2>
     <br>
-    <%= link_to 'Learn More', courses_path, :class => 'btn btn-success' %>
+    <%= link_to 'Learn More', courses_path, :class => 'btn btn-lg btn-success' %>
     <br>
     <br>
   </div>
@@ -15,15 +15,21 @@
 
 <br>
 <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 features text-center">
-  <div class="col-sm-4 col-sm-offset-1 booyah-box feature">
-    <h3>Students</h3>
-    <br>
-    <p>Enroll in a variety of free and premium online courses.</p>
-  </div>
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1 booyah-box feature">
+      <h1>Students</h1>
+      <br>
+      <h4>Take a variety of free and premium online courses.</h4>
+      <br>
+      <%= link_to "Enroll in a Course", courses_path, :class => "btn btn-success" %>
+    </div>
 
-  <div class="col-sm-4 col-sm-offset-2 booyah-box feature">
-    <h3>Teachers</h3>
-    <br>
-    <p>Easily create and organize any video course you can imagine.</p>
+    <div class="col-sm-5 col-sm-offset-0 booyah-box feature">
+      <h1>Teachers</h1>
+      <br>
+      <h4>Easily create and organize any video course you can imagine.</h4>
+      <br>
+      <%= link_to "Teach a Course", new_instructor_course_path, :class => "btn btn-success" %>
+    </div>
   </div>
 </div>
